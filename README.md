@@ -26,6 +26,8 @@ TUTORIAL - https://star-labs.gitbook.io/star-labs/monad-eng
 
 "izumi" - swap tokens on Izumi DEX
 
+"kuru"  - swap tokens on Kuru
+
 # STAKES
 "apriori" - stake MON token
 
