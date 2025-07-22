@@ -1,5 +1,5 @@
 TASKS = [
-    "CRUSTY_SWAP",
+    "KURU",
 ]
 
 CRUSTY_SWAP = [
@@ -7,7 +7,9 @@ CRUSTY_SWAP = [
     # "crusty_sell",
     # "crusty_refuel_from_one_to_all",
 ]
-
+KURU = [
+    "kuru_swaps"
+]
 FAUCET = [
     "faucet",
 ]
@@ -72,7 +74,7 @@ BELOW ARE THE READY-MADE TASKS THAT YOU CAN USE:
 BRIDGE_AND_SWAPS = [
     "crusty_refuel",
     ("izumi", "ambient", "bean", "swaps"),
-    "collect_all_to_monad",
+    "collect_all_to_monad","kuru_swaps"
 ]
 
 
@@ -142,6 +144,7 @@ EXCHANGE_AND_MEMEBRIDGE_TASK = [
 # "ambient" - swap tokens on Ambient DEX
 # "izumi" - swap tokens on Izumi DEX
 # "madness_swaps" - swap tokens on madness.finance/swap
+# "kuru_swaps" swap tokens on kuru.io/swap
 
 # STAKES
 # "apriori" - stake MON token

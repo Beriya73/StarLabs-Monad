@@ -228,6 +228,10 @@ class ZkcodexConfig:
     ONE_ACTION_PER_LAUNCH: bool
 
 @dataclass
+class KuruConfig:
+    SWAP_ALL_TO_MONAD: bool
+    
+@dataclass
 class Config:
     SETTINGS: SettingsConfig
     EXCHANGES: ExchangesConfig
@@ -255,6 +259,7 @@ class Config:
     FLAPSH: FlapshConfig
     MADNESS: MadnessConfig
     ZKCODEX: ZkcodexConfig
+    KURU: KuruConfig
     WALLETS: WalletsConfig = field(default_factory=WalletsConfig)
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
@@ -492,9 +497,11 @@ class Config:
                 DEPLOY_CONTRACT=data["ZKCODEX"]["DEPLOY_CONTRACT"],
                 ONE_ACTION_PER_LAUNCH=data["ZKCODEX"]["ONE_ACTION_PER_LAUNCH"],
             ),
+            KURU=KuruConfig(
+                SWAP_ALL_TO_MONAD=data["KURU"]["SWAP_ALL_TO_MONAD"],
+            )
+
         )
-
-
 # Singleton pattern
 def get_config() -> Config:
     """Get configuration singleton"""

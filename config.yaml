@@ -218,3 +218,6 @@ ZKCODEX:
     # if true, the bot will perform only one action per launch randomly
     # if false, the bot will perform all actions in random order
     ONE_ACTION_PER_LAUNCH: false
+
+KURU:
+    SWAP_ALL_TO_MONAD: false

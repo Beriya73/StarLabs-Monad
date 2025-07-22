@@ -43,6 +43,7 @@ from src.model.nad_domains.instance import NadDomains
 from src.utils.client import create_client
 from src.utils.config import Config
 from src.model.help.stats import WalletStats
+from src.model.kuru.instance import Kuru
 
 
 class Start:
@@ -537,6 +538,16 @@ class Start:
                 self.private_key,
             )
             await superboard.quests()
+
+        elif task == "kuru_swaps":
+            kuru = Kuru(
+                self.account_index,
+                self.proxy,
+                self.private_key,
+                self.config,
+                self.session,
+            )
+            await kuru.execute()
             
     async def sleep(self, task_name: str):
         """Делает рандомную паузу между действиями"""
