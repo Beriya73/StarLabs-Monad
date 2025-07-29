@@ -69,7 +69,7 @@ TUTORIAL - https://star-labs.gitbook.io/star-labs/monad-eng
 
 1. Clone the repository
 ```bash
-git clone https://github.com/0xStarLabs/StarLabs-Monad.git
+git clone https://github.com/Beriya73/StarLabs-Monad.git
 cd StarLabs-Monad
 ```
 
